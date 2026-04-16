@@ -1,0 +1,116 @@
+<aside class="sidebar" id="sidebar">
+
+  <!-- Logo + Docs badge -->
+  <div class="sidebar-header">
+    <a href="{{ site.baseurl }}/" class="sidebar-logo-link">
+      <img src="{{ site.baseurl }}/assets/images/ocs-logo-black.svg" alt="OneConsumer" height="24">
+    </a>
+    <span class="sidebar-docs-badge">Docs</span>
+  </div>
+
+  <!-- Search -->
+  <div class="sidebar-search-wrap">
+    <span class="search-icon">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5">
+        <circle cx="11" cy="11" r="8"></circle>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+    </span>
+    <input type="text" id="search-input" class="sidebar-search-input" placeholder="Search..." autocomplete="off">
+    <button class="search-clear-btn" id="search-clear" aria-label="Clear search" style="display:none">×</button>
+  </div>
+
+  <!-- Search results -->
+  <div class="search-results-panel" id="search-results" style="display:none">
+    <ul id="search-results-list" class="search-results-list"></ul>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="sidebar-nav" id="sidebar-nav">
+    <ul class="sidebar-nav-list">
+
+      <li class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}">
+        <a href="{{ site.baseurl }}/">Home</a>
+      </li>
+
+      <li class="sidebar-nav-section{% if page.url contains '/docs/why/' %} open{% endif %}">
+        <button class="sidebar-section-btn" aria-expanded="{% if page.url contains '/docs/why/' %}true{% else %}false{% endif %}">
+          <span>Why OneConsumer?</span>
+          <svg class="chevron-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <ul class="sidebar-subnav{% if page.url contains '/docs/why/' %} open{% endif %}">
+          <li{% if page.url == '/docs/why/' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/why/">Overview</a></li>
+          <li{% if page.url contains 'freshers' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/why/freshers/">First salary – now what?</a></li>
+          <li{% if page.url contains 'credit-cards' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/why/credit-cards/">Should I get a credit card?</a></li>
+          <li{% if page.url contains 'confused' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/why/confused/">Why is advice so confusing?</a></li>
+          <li{% if page.url contains 'trust' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/why/trust/">How is OneConsumer different?</a></li>
+        </ul>
+      </li>
+
+      <li class="sidebar-nav-section{% if page.url contains '/docs/who/' %} open{% endif %}">
+        <button class="sidebar-section-btn" aria-expanded="{% if page.url contains '/docs/who/' %}true{% else %}false{% endif %}">
+          <span>Who is this for?</span>
+          <svg class="chevron-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <ul class="sidebar-subnav{% if page.url contains '/docs/who/' %} open{% endif %}">
+          <li{% if page.url == '/docs/who/' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/who/">Overview</a></li>
+          <li{% if page.url contains 'right-for-me' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/who/right-for-me/">Is it right for me?</a></li>
+          <li{% if page.url contains 'life-moments' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/who/life-moments/">When should I use it?</a></li>
+        </ul>
+      </li>
+
+      <li class="sidebar-nav-section{% if page.url contains '/docs/how/' %} open{% endif %}">
+        <button class="sidebar-section-btn" aria-expanded="{% if page.url contains '/docs/how/' %}true{% else %}false{% endif %}">
+          <span>How it works</span>
+          <svg class="chevron-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <ul class="sidebar-subnav{% if page.url contains '/docs/how/' %} open{% endif %}">
+          <li{% if page.url == '/docs/how/' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/how/">Overview</a></li>
+          <li{% if page.url contains 'onestep' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/how/onestep/">What is OneStep AI?</a></li>
+          <li{% if page.url contains 'personalized' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/how/personalized/">How does OneStep personalize?</a></li>
+          <li{% if page.url contains '/how/content' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/how/content/">Learning about finance</a></li>
+          <li{% if page.url contains 'products' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/how/products/">Finding the right product</a></li>
+        </ul>
+      </li>
+
+      <li class="sidebar-nav-section{% if page.url contains '/docs/what-if/' %} open{% endif %}">
+        <button class="sidebar-section-btn" aria-expanded="{% if page.url contains '/docs/what-if/' %}true{% else %}false{% endif %}">
+          <span>What if...</span>
+          <svg class="chevron-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <ul class="sidebar-subnav{% if page.url contains '/docs/what-if/' %} open{% endif %}">
+          <li{% if page.url contains 'first-job' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/what-if/first-job/">I just started my first job?</a></li>
+          <li{% if page.url contains 'new-city' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/what-if/new-city/">I moved to a new city?</a></li>
+          <li{% if page.url contains 'big-expense' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/what-if/big-expense/">I need to make a big purchase?</a></li>
+          <li{% if page.url contains 'no-knowledge' %} class="active"{% endif %}><a href="{{ site.baseurl }}/docs/what-if/no-knowledge/">I know nothing about finance?</a></li>
+        </ul>
+      </li>
+
+      <li class="sidebar-nav-item{% if page.url contains 'common-questions' %} active{% endif %}">
+        <a href="{{ site.baseurl }}/docs/common-questions/">Common Questions</a>
+      </li>
+
+      <li class="sidebar-nav-item{% if page.url contains 'get-started' %} active{% endif %}">
+        <a href="{{ site.baseurl }}/docs/get-started/">Get Started</a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-- Bottom CTA -->
+  <div class="sidebar-bottom">
+    <a href="https://oneconsumer.money/waitlist" class="sidebar-cta-link" target="_blank" rel="noopener">
+      Join OneStep waitlist →
+    </a>
+    <a href="https://oneconsumer.money" class="sidebar-site-link" target="_blank" rel="noopener">
+      oneconsumer.money
+    </a>
+  </div>
+
+</aside>
+
+<!-- Mobile toggle -->
+<button class="sidebar-mobile-toggle" id="sidebar-toggle" aria-label="Open navigation">
+  <span></span><span></span><span></span>
+</button>
+<div class="sidebar-backdrop" id="sidebar-backdrop"></div>

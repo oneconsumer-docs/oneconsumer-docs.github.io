@@ -1,0 +1,5 @@
+---
+layout: none
+---
+{% assign first = true %}
+[{% for page in site.pages %}{% if page.title %}{% unless first %},{% endunless %}{% assign first = false %}{"title":{{ page.title | jsonify }},"url":{{ page.url | jsonify }},"content":{{ page.content | strip_html | normalize_whitespace | truncate: 400 | jsonify }}}{% endif %}{% endfor %}]

@@ -2,83 +2,29 @@
 layout: default
 ---
 
-<div class="doc-wrapper">
-  <div class="container">
-    {% include breadcrumbs.html %}
+<div class="doc-page">
+  {% include breadcrumbs.html %}
 
-    <div class="doc-layout">
-      <aside class="doc-sidebar">
-        <nav class="doc-nav">
-          <div class="nav-section">
-            <h3><a href="{{ site.baseurl }}/docs/why/">Why OneConsumer?</a></h3>
-            <ul>
-              <li><a href="{{ site.baseurl }}/docs/why/freshers/">I just got my first salary. Now what?</a></li>
-              <li><a href="{{ site.baseurl }}/docs/why/credit-cards/">Should I get a credit card?</a></li>
-              <li><a href="{{ site.baseurl }}/docs/why/confused/">Why is financial advice so confusing?</a></li>
-              <li><a href="{{ site.baseurl }}/docs/why/trust/">How is OneConsumer different?</a></li>
-            </ul>
-          </div>
+  <article class="doc-article">
+    {% if page.title %}
+    <header class="doc-header">
+      <h1 class="doc-title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <p class="doc-subtitle">{{ page.subtitle }}</p>
+      {% endif %}
+    </header>
+    {% endif %}
 
-          <div class="nav-section">
-            <h3><a href="{{ site.baseurl }}/docs/who/">Who is this for?</a></h3>
-            <ul>
-              <li><a href="{{ site.baseurl }}/docs/who/right-for-me/">Is OneConsumer right for me?</a></li>
-              <li><a href="{{ site.baseurl }}/docs/who/life-moments/">When should I use OneConsumer?</a></li>
-            </ul>
-          </div>
-
-          <div class="nav-section">
-            <h3><a href="{{ site.baseurl }}/docs/how/">How it works</a></h3>
-            <ul>
-              <li><a href="{{ site.baseurl }}/docs/how/onestep/">What is OneStep AI?</a></li>
-              <li><a href="{{ site.baseurl }}/docs/how/personalized/">How does OneStep personalize advice?</a></li>
-              <li><a href="{{ site.baseurl }}/docs/how/content/">How do I learn about finance?</a></li>
-              <li><a href="{{ site.baseurl }}/docs/how/products/">How do I find the right product?</a></li>
-            </ul>
-          </div>
-
-          <div class="nav-section">
-            <h3>What if...</h3>
-            <ul>
-              <li><a href="{{ site.baseurl }}/docs/what-if/first-job/">I just started my first job?</a></li>
-              <li><a href="{{ site.baseurl }}/docs/what-if/new-city/">I moved to a new city?</a></li>
-              <li><a href="{{ site.baseurl }}/docs/what-if/big-expense/">I need to make a big purchase?</a></li>
-              <li><a href="{{ site.baseurl }}/docs/what-if/no-knowledge/">I know nothing about finance?</a></li>
-            </ul>
-          </div>
-
-          <div class="nav-section">
-            <h3><a href="{{ site.baseurl }}/docs/get-started/">Get Started</a></h3>
-          </div>
-
-          <div class="nav-section">
-            <h3><a href="{{ site.baseurl }}/docs/common-questions/">Common Questions</a></h3>
-          </div>
-        </nav>
-      </aside>
-
-      <article class="doc-content">
-        {% if page.title %}
-        <header class="doc-header">
-          <h1 class="doc-title">{{ page.title }}</h1>
-          {% if page.subtitle %}
-          <p class="doc-subtitle">{{ page.subtitle }}</p>
-          {% endif %}
-        </header>
-        {% endif %}
-
-        <div class="content">
-          {{ content }}
-        </div>
-
-        {% if page.cta != false %}
-        <div class="doc-cta">
-          <a href="{{ page.cta_url | default: site.website }}" class="cta-button" target="_blank" rel="noopener">
-            {{ page.cta | default: "Try OneConsumer now →" }}
-          </a>
-        </div>
-        {% endif %}
-      </article>
+    <div class="content">
+      {{ content }}
     </div>
-  </div>
+
+    {% if page.cta != false %}
+    <div class="doc-cta">
+      <a href="{{ page.cta_url | default: site.website }}" class="cta-button" target="_blank" rel="noopener">
+        {{ page.cta | default: "Try OneConsumer now →" }}
+      </a>
+    </div>
+    {% endif %}
+  </article>
 </div>

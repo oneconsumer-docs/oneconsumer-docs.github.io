@@ -3,30 +3,26 @@ layout: default
 ---
 
 <div class="page-wrapper">
-  <div class="container">
-    {% include breadcrumbs.html %}
-
-    <article class="page-content">
-      {% if page.title %}
-      <header class="page-header">
-        <h1 class="page-title">{{ page.title }}</h1>
-        {% if page.subtitle %}
-        <p class="page-subtitle">{{ page.subtitle }}</p>
-        {% endif %}
-      </header>
+  <article class="page-article">
+    {% if page.title %}
+    <header class="page-header">
+      <h1 class="page-title">{{ page.title }}</h1>
+      {% if page.subtitle %}
+      <p class="page-subtitle">{{ page.subtitle }}</p>
       {% endif %}
+    </header>
+    {% endif %}
 
-      <div class="content">
-        {{ content }}
-      </div>
+    <div class="content">
+      {{ content }}
+    </div>
 
-      {% if page.cta %}
-      <div class="page-cta">
-        <a href="{{ site.website }}" class="cta-button" target="_blank" rel="noopener">
-          {{ page.cta | default: "Get started on OneConsumer →" }}
-        </a>
-      </div>
-      {% endif %}
-    </article>
-  </div>
+    {% if page.cta %}
+    <div class="doc-cta">
+      <a href="{{ page.cta_url | default: site.website }}" class="cta-button" target="_blank" rel="noopener">
+        {{ page.cta }}
+      </a>
+    </div>
+    {% endif %}
+  </article>
 </div>
