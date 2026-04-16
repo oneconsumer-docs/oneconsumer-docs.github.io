@@ -134,7 +134,7 @@ And don't worry — your data stays private. We don't sell it or spam you.
 
 **No question is stupid. No situation too specific. Just ask.**
 
-[Start chatting with OneStep →](https://oneconsumer.money)
+[Start chatting with OneStep →](https://oneconsumer.money/waitlist)
 
 ---
 
@@ -295,7 +295,7 @@ OneStep is designed to be honest when it doesn't have enough info or when you ne
 
 **No sign-up required to start. Just chat.**
 
-[Start with OneStep AI →](https://oneconsumer.money)
+[Start with OneStep AI →](https://oneconsumer.money/waitlist)
 
 ---
 
@@ -337,7 +337,7 @@ If it does, ask more. If it doesn't, at least you tried.
 
 [Join the waitlist for OneStep AI →](https://oneconsumer.money/waitlist)
 
-[Chat with OneStep AI →](https://oneconsumer.money)
+[Chat with OneStep AI →](https://oneconsumer.money/waitlist)
 
 ---
 
