@@ -1,0 +1,76 @@
+# OneConsumer Documentation Site Configuration
+
+# Site Settings
+title: "OneConsumer Documentation"
+description: "Your AI-powered financial buddy for life's first big decisions. OneConsumer helps young Indians make better financial decisions. Visit oneconsumer.money"
+url: "https://oneconsumer-docs.github.io"
+baseurl: ""
+
+# Site Metadata
+author: "OneConsumer"
+website: "https://oneconsumer.money"
+logo: "/assets/images/logo.png"
+
+# Language and Locale (India-specific for SEO)
+lang: en-IN
+timezone: Asia/Kolkata
+
+# Build Settings
+markdown: kramdown
+permalink: pretty
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# SEO Tag Configuration
+tagline: "Financial guidance for young Indians"
+social:
+  name: OneConsumer
+  links:
+    - https://oneconsumer.money
+
+# Default Front Matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+      author: "OneConsumer"
+  - scope:
+      path: "docs"
+    values:
+      layout: "doc"
+
+# Navigation
+navigation:
+  - title: "Why OneConsumer?"
+    url: /docs/why/
+  - title: "Who is this for?"
+    url: /docs/who/
+  - title: "How it works"
+    url: /docs/how/
+    subnav:
+      - title: "OneStep AI"
+        url: /docs/how/onestep/
+      - title: "Content & Guides"
+        url: /docs/how/content/
+      - title: "Product Matching"
+        url: /docs/how/products/
+  - title: "Common Questions"
+    url: /docs/common-questions/
+  - title: "Get Started"
+    url: https://oneconsumer.money
+    external: true
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - README.md

@@ -1,0 +1,29 @@
+# robots.txt for OneConsumer Documentation
+# Optimized for India SEO
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://anurag-wednesday.github.io/ocs-docs/sitemap.xml
+
+# Crawl-delay for better server handling
+# Crawl-delay: 1
+
+# Specifically allow important pages
+Allow: /docs/
+Allow: /index.html
+
+# Block admin/internal pages if any (currently none)
+# Disallow: /admin/
+
+# Target primarily Indian search engines and Google India
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/images/
+
+# Allow Bing
+User-agent: Bingbot
+Allow: /
