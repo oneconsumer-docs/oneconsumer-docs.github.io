@@ -8,17 +8,17 @@ cta: "Get started on OneConsumer →"
 
 Remember that moment when your first salary hit your account? The excitement... and then the questions. _Should I save it? Invest it? Get a credit card? What even is HRA?_
 
-**OneConsumer is the friend who actually knows the answers.**
+**OneConsumer's mission is to help Indians make better financial decisions.**
 
-We're an AI-powered financial companion built specifically for young Indians navigating their first job, first card, first loan, first big expense. The moments when money stops being theoretical and starts being real.
+We believe that good financial decisions start with good information — clear, honest, and personalised to your actual situation. No jargon. No hidden sales pitches. Just the guidance you need, when you need it.
 
 ---
 
 ## Three ways we help you decide better
 
-### 💬 OneStep AI - Your personalized financial buddy
+### 💬 OneStep AI - Personalized financial coaching
 
-Ask anything. "Should I get the credit card?" "How do I file ITR for the first time?" **OneStep learns about you and gives you straight answers.** No jargon. No spam.
+OneStep is our AI-powered financial coach. Ask anything. "Should I get the credit card?" "How do I file ITR for the first time?" **OneStep learns about you and gives you straight answers.** No jargon. No spam.
 
 It's like texting a financially-smart friend who's always available and never judges.
 

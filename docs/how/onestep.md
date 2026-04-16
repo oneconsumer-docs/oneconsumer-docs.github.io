@@ -2,6 +2,8 @@
 layout: doc
 title: "What is OneStep AI?"
 description: "OneStep AI is your personalized financial buddy that learns about you and gives tailored advice. Chat 24/7 about credit cards, loans, budgeting. Visit oneconsumer.money"
+cta: "Join the OneStep waitlist →"
+cta_url: "https://oneconsumer.money/waitlist"
 ---
 
 **Think of OneStep as your financially-smart best friend. Available 24/7. Never judges. Always personalized.**
@@ -331,7 +333,9 @@ Ask a question. Any question. See if the answer helps.
 
 If it does, ask more. If it doesn't, at least you tried.
 
-**No commitment. No sign-up required. Just chat.**
+**No commitment. Just chat.**
+
+[Join the waitlist for OneStep AI →](https://oneconsumer.money/waitlist)
 
 [Chat with OneStep AI →](https://oneconsumer.money)
 

@@ -73,7 +73,7 @@ layout: default
 
         {% if page.cta != false %}
         <div class="doc-cta">
-          <a href="{{ site.website }}" class="cta-button" target="_blank" rel="noopener">
+          <a href="{{ page.cta_url | default: site.website }}" class="cta-button" target="_blank" rel="noopener">
             {{ page.cta | default: "Try OneConsumer now →" }}
           </a>
         </div>
